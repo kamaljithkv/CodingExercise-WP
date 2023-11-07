@@ -1,0 +1,23 @@
+I'll provide a detailed description for each of the files in our plugin and theme directory
+
+Plugin Directory (wp-content/plugins/thought-of-the-day):
+
+1) api-fetch.php: This file is responsible for fetching data from an external API and populating custom post types with this data. It interacts with the API and creates new posts based on the API data and custom post type.
+
+2) handle-thought-image-upload.php: This file handles the image uploads for our thoughts. It receives uploaded images, processes them, and associates them with the appropriate thoughts as featured images.
+
+3) settings.php: This file defines the settings page for our plugin. It allows to configure the API endpoint, the number of thoughts to display, and other plugin settings. It's the interface where we set our plugin's behavior.
+
+4) thought-of-the-day.php: This is the main plugin file that initializes and integrates our plugin with WordPress.I have created the custom post type for thoughts, and included required files.
+
+5) thought-of-the-day-popupwidget.php: This file defines a custom widget for displaying a popup with daily thoughts. The widget is responsible for showing the thought to users and ensuring it's visible only once.
+
+Theme Directory (wp-content/themes/twentytwentythree):
+
+1) page-thought-listing.php: This is a custom page template that displays a list of thoughts. It uses WP_Query to retrieve thoughts and displays them with pagination. It's the template used for our "Thought Listing" page. eg, url: https://your-wordpress-site.com/thought-listing/
+
+2) thought-listing-styles.css: This CSS file contains the styles for our thought listing page. It defines the layout, colors, and styling for the thoughts, pagination, and other elements on the page.
+
+3) functions.php: This is the theme's functions file, where we added custom functions to extend the theme's functionality. I have added enqueue styles and scripts, added widget menu iteam in Appereance and registered a widget area.
+
+4) js/popup-script.js: This JavaScript file contains the script for managing the popup display of daily thoughts. It ensures that the popup is visible only once for a user and handles the "Show more thoughts" functionality.
